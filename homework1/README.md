@@ -15,7 +15,7 @@ The following packages must be installed prior to running this code:
 To run this code, please enter the following commands in R:
 ```
 library(devtools)
-source_url("https://raw.github.com/cadancai/msan622/homework0/homework1.R")
+source_url("https://raw.githubusercontent.com/cadancai/msan622/master/homework1/homework1.R")
 ```
 
 This will generate 4 images. See below for details.
