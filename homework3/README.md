@@ -1,4 +1,4 @@
-Homework 2: Multivariate
+Homework 3: Multivariate
 ==============================
 
 | **Name**  | Lee Cai  |
