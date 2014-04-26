@@ -53,6 +53,9 @@ The time series plot consists of two components, the overview and the detailed v
 
 The bubble plot is quite fun to watch and play around. You can choose from a list of size variables. The x axis is petroleum price, the y axis is total distance travelled for all accidents that caused casualities. There is the time dimension in years. Each point shows up on the plot represents a data point in a certain month with different color for a different month. One can choose to display only certain months with labels or not. At last, you can play the animation and look at the changes of size and location of each data point over years. Since we have observed some seasonal effect in the data, it makes sense to compare the data in the same month over time.
 
+### Discussing the lie-factor, data ink ratio and data density
+
+There is no distortion in all views, therefore the lie-factor should be 1. The detailed view of the time series plot used stacked area plot, therefore the data ink would be lowered. Other than that, the data ink ratio should be high. The data density is decent (not too dense, but reasonably informative).
 
 ## Customization
 
