@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h4>Exponential Smoothing</h4>
+
+<p>A natural estimate for predicting the next value of a given time series at certain point in time is to take weighted sums of past observations. It seems reasonable to weight recent observations more than observations from the past. Hence, one possibility is to use geometric weights and therefore comes exponential smoothing. </p>
+
+<p>Exponential smoothing in its basic form (the term "exponential" comes from the fact that the weights decay exponentially) should only be used for time series with no systematic trend and/or seasonal components. It has been generalized to the "Holt–Winters"–procedure in order to deal with time series containg trend and seasonal variation. In this case, three smoothing parameters are required, namely alpha for the level, beta the trend and gamma for the seasonal variation. </p>
+
+<p>The simple exponential model sets both beta and gamma to zero; the double exponential model sets gamma to zero; the seasonal exponential model sets the beta to zero; while the Holt-Winters model includes all parameters. </p>
+
+</body>
+</html>

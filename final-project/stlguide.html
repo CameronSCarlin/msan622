@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h4>Seasonal Trend Decomposition</h4>
+
+<p> When calling stl() with s.window='periodic', the seasonal component for January is simply the mean of all January values. Similarly, the seasonal component for February is simply the mean of all February values, etc. Otherwise, the seasonal component is calculated using loess smoothing (discussed below). Having calculated the seasonal component, the seasonally-adjusted data (the original data minus the seasonal component) is loess-smoothed to determine the trend. The remainder/noise is then the original data minus the seasonal and trend components.</p>
+
+<p>This is what gets implemented in my shiny app. There is no Loess smoothing options, but some information is provided below for Loess as well. Just note that STL is capable of using Loess as well.</p>
+
+<h4>LOESS Smoothing</h4>
+
+<p>Loess ("locally-weighted scatterplot smoothing") uses local regression to remove "jaggedness" from data. A window of a specified width is placed over the data. The wider the window, the smoother the resulting loess curve. A regression line (or curve) is fitted to the observations that fall within the window, the points closest to the centre of the window being weighted to have the greatest effect on the calculation of the regression line. The weighting is reduced on those points within the window that are furthest from the regression line. The regression is re-run and weights are again re-calculated. This process is repeated several times. We thereby obtain a point on the loess curve. This is the point on the regression line at the centre of the window.
+The loess curve is calculated by moving the window across the data. Each point on the resulting loess curve is the intersection of a regression line and a vertical line at the centre of such a window. </p>
+
+
+</body>
+</html>
